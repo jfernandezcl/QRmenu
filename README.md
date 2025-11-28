@@ -1,65 +1,65 @@
-## 🍽️ QRMenu App
+## 🍽️ QRMenu Application
 
-QRMenu permite a los restaurantes registrarse y gestionar sus cartas, mientras que los usuarios pueden ver la carta escaneando un código QR único de cada restaurante.
-
----
-
-## 📝 Resumen
-
-La aplicación permite:
-
-Que los restaurantes se registren e inicien sesión de forma segura
-
-Crear, actualizar y gestionar los elementos del menú
-
-Que los usuarios escaneen un QR y vean al instante la carta y la información del restaurante
-
-Una interfaz moderna, responsiva y fácil de usar
+QRMenu allows restaurants to register and manage their menus, while users can view the menu by scanning a unique QR code for each restaurant.
 
 ---
 
-## ⚙️ Arquitectura
+## 📝 Overview
 
-El proyecto se divide en dos partes principales:
+The application enables:
 
-Backend
+Restaurants to register and log in securely
 
-Construido con Node.js y MySQL2
+Restaurants to create, update, and manage their menu items
 
-Proporciona endpoints RESTful para registro de restaurantes, gestión de cartas y acceso de usuarios
+Users to scan a QR code and instantly view the restaurant’s menu and information
 
-Maneja autenticación y gestión segura de datos
-
----
-
-Frontend
-
-Construido con React, TypeScript y Vite
-
-Estilizado con Tailwind CSS para una interfaz moderna y responsiva
-
-Soporta inicio de sesión de restaurantes, gestión de cartas y visualización vía QR
-
-Estructura escalable para futuras funcionalidades
-
-## 🚀 Cómo usar
-
-Configurar y arrancar el servidor backend (ver README del backend)
-
-Configurar y arrancar el cliente frontend (ver README del frontend)
-
-Los restaurantes se registran o inician sesión para gestionar su carta
-
-Los usuarios escanean el QR del restaurante para ver su carta
-
-Comienza a interactuar con los menús de forma rápida y sencilla
+A modern, responsive, and user-friendly interface
 
 ---
 
-## 🔧 Tecnologías
+## ⚙️ Architecture
+
+The project is divided into two main parts:
+
+- Backend
+
+Built with Node.js and MySQL2
+
+Provides RESTful endpoints for restaurant registration, menu management, and user access
+
+Handles authentication and secure data management
+
+---
+
+- Frontend
+
+Built with React, TypeScript, and Vite
+
+Styled with Tailwind CSS for a modern and responsive UI
+
+Supports restaurant login, menu management, and QR-based menu viewing
+
+Includes scalable structure for future features
+
+## 🚀 How to Use
+
+Set up and start the backend server (see backend README)
+
+Set up and start the frontend client (see frontend README)
+
+Restaurants register or log in to manage their menu
+
+Users scan a restaurant QR code to view its menu
+
+Start interacting with menus quickly and easily
+
+---
+
+## 🔧 Technologies
 
 Backend: Node.js, MySQL2
 
 Frontend: React, TypeScript, Vite, Tailwind CSS
 
-Otros: API REST, integración con códigos QR
+Other: REST API, QR code integration
