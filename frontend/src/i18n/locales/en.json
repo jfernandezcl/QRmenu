@@ -1,6 +1,6 @@
 {
   "common": {
-    "app_name": "QRMenu",
+    "app_name": "QRmenu",
     "homepage_title": "Digitalize your menu and improve your customers' experience",
     "homepage_description": "QRMenu allows restaurants to easily manage their menus, while users can view them instantly by scanning a unique QR code.",
     "buttons": {
@@ -22,7 +22,7 @@
       "follow_us": "Follow us"
     },
     "footer": {
-      "copyright": "© QRMenu Global 2025 All rights reserved"
+      "copyright": "© QRmenu Global 2025 All rights reserved"
     },
     "access": {
       "establishments": "Access to establishments"
