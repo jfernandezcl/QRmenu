@@ -1,6 +1,6 @@
 {
   "common": {
-    "app_name": "QRMenu",
+    "app_name": "QRmenu",
     "homepage_title": "Digitaliza tu carta y mejora la experiencia de tus clientes",
     "homepage_description": "QRMenu permite a los restaurantes gestionar su menú de manera sencilla, mientras que los usuarios pueden verlo al instante escaneando un código QR único.",
     "buttons": {
