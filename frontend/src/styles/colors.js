@@ -5,6 +5,8 @@ export const colors = {
   buttonPrimary: "#2cd49a", // verde
   buttonSecondary: "#c1e5d9", // verde claro
 
+  hoverPrimary: "#24b683", //verde primario oscuro (hover)
+
   accent: "#FBBF24", // amarillo
 
   textPrimary: "#082a4d", // azul oscuro
