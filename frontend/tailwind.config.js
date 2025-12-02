@@ -1,11 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-import { typography } from "./src/styles/typography.js";
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/styles/**/*.css",
+  ],
   theme: {
     extend: {
-      fontFamily: typography.fontFamily,
-      fontSize: typography.fontSize,
+      fontFamily: {
+        sans: [
+          "Inter",
+          "system-ui",
+          "Avenir",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
+      },
     },
   },
   plugins: [],
