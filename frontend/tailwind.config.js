@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import { colors } from "./src/styles/colors.js";
+
 export default {
   content: [
     "./index.html",
@@ -17,6 +19,7 @@ export default {
           "sans-serif",
         ],
       },
+      colors: colors,
     },
   },
   plugins: [],
