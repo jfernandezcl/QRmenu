@@ -1,41 +1,32 @@
 import { useTranslation } from "react-i18next";
-import undraw_breakfast from "../images/undraw_breakfast.svg"
-
+import undraw_breakfast from "../images/undraw_breakfast.svg";
+import LanguageModalButton from "./LanguageModalButton.tsx";
 
 export default function Header() {
-  const {t, i18n} = useTranslation();
+  const { t } = useTranslation();
 
   return (
-  <header className="w-full bg-[#025963] shadow-md mb-8 relative">
-  <div className="flex justify-between items-center px-4 py-2">
+    <header className="w-full bg-background mb-8">
+      <div className="max-w-5xl mx-auto flex justify-between items-center px-4 py-2 h-20">
+        {/* Logo + App name */}
+        <div className="flex items-center gap-12 text-4xl font-normal">
+          <img src={undraw_breakfast} alt="logo" className="h-14 w-14" />
+          <h1 className="text-textPrimary">
+            <a href="/home" className="hover:text-gray-300">
+              {t("app_name")}
+            </a>
+          </h1>
+        </div>
 
-    {/* IZQUIERDA */}
-    <h1 className="text-white text-xl font-bold flex items-center gap-3">
-      <img src={undraw_breakfast} alt="logo" className="h-14 w-14" />
-      <a href="/home" className="hover:text-gray-300">
-        {t("app_name")}
-      </a>
-    </h1>
-
-    {/* DERECHA */}
-    <div className="flex gap-2">
-      <button
-        className="px-3 py-1 rounded-lg border border-[#025963] bg-gray-300 font-medium text-[#025963]"
-        onClick={() => i18n.changeLanguage("en")}
-      >
-        EN
-      </button>
-
-      <button
-        className="px-3 py-1 rounded-lg border border-[#025963] bg-gray-300 font-medium text-[#025963]"
-        onClick={() => i18n.changeLanguage("es")}
-      >
-        ES
-      </button>
-    </div>
-
-  </div>
-</header>
-
-  )
+        {/* Botones de login, register y lenguaje */}
+        <div className="flex gap-12">
+          <LanguageModalButton />
+          <button>{t("login")}</button>
+          <button className="px-4 py-3 text-textQuaternary bg-buttonPrimary rounded">
+            {t("register")}
+          </button>
+        </div>
+      </div>
+    </header>
+  );
 }

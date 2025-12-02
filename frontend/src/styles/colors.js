@@ -1,16 +1,17 @@
 export const colors = {
-  background: "#e1fbf2",
+  background: "#e1fbf2", // verde muy claro
+  bgSecundary: "#2cd49a", // verde
 
-  buttonPrimary: "#2cd49a",
-  buttonSecondary: "#c1e5d9",
+  buttonPrimary: "#2cd49a", // verde
+  buttonSecondary: "#c1e5d9", // verde claro
 
-  accent: "#FBBF24",
+  accent: "#FBBF24", // amarillo
 
-  textPrimary: "#082a4d",
-  textSecondary: "#8a9da9",
-  textTertiary: "#adc0c1",
-  textQuaternary: "#ffffff",
+  textPrimary: "#082a4d", // azul oscuro
+  textSecondary: "#8a9da9", // azul grisáceo
+  textTertiary: "#adc0c1", // azul gris claro
+  textQuaternary: "#ffffff", // blanco
 
-  danger: "#dc0031",
-  success: "#f5880f",
+  danger: "#dc0031", // rojo
+  success: "#f5880f", // naranja
 };

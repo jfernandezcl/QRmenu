@@ -19,6 +19,11 @@ export default {
           "sans-serif",
         ],
       },
+      fontWeight: {
+        normal: 400,
+        medium: 500,
+        bold: 700,
+      },
       colors: colors,
     },
   },
