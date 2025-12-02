@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex items-center gap-12 text-4xl font-normal">
           <img src={undraw_breakfast} alt="logo" className="h-14 w-14" />
           <h1 className="text-textPrimary">
-            <a href="/home" className="hover:text-gray-300">
+            <a href="/home" className="hover:text-buttonPrimary">
               {t("app_name")}
             </a>
           </h1>
@@ -21,8 +21,8 @@ export default function Header() {
         {/* Botones de login, register y lenguaje */}
         <div className="flex gap-12">
           <LanguageModalButton />
-          <button>{t("login")}</button>
-          <button className="px-4 py-3 text-textQuaternary bg-buttonPrimary rounded">
+          <button className="hover:text-buttonPrimary">{t("login")}</button>
+          <button className="relative px-8 py-3 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary">
             {t("register")}
           </button>
         </div>
