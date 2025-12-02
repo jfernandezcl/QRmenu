@@ -9,6 +9,7 @@ export const colors = {
   textPrimary: "#082a4d",
   textSecondary: "#8a9da9",
   textTertiary: "#adc0c1",
+  textQuaternary: "#ffffff",
 
   danger: "#dc0031",
   success: "#f5880f",
