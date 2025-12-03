@@ -9,7 +9,8 @@
       "access": "Access",
       "create_account": "Create account",
       "forgot_password": "Forgot your password?",
-      "start_now": "Start now with QRMenu"
+      "start_now": "Start now with QRMenu",
+      "language": "Language"
     },
     "labels": {
       "email": "Email",
@@ -26,6 +27,10 @@
     },
     "access": {
       "establishments": "Access to establishments"
+    },
+    "language": {
+      "spanish": "Spanish",
+      "english": "English"
     }
   }
 }
