@@ -10,7 +10,7 @@ import undraw_breakfast from "../images/undraw_breakfast.svg";
 export default function Header() {
   const { t, i18n } = useTranslation();
 
-  const changeLanguage = (lng: string) => {
+  const changeLanguage = (lng: "en" | "es") => {
     i18n.changeLanguage(lng);
   };
 
@@ -41,10 +41,10 @@ export default function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
           <button className="relative px-8 py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary">
-            {t("login")}
+            {t("buttons.login")}
           </button>
           <button className="relative px-6 py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary">
-            {t("register")}
+            {t("buttons.register")}
           </button>
         </div>
       </div>
