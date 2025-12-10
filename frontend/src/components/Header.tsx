@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full bg-background mb-8">
+    <header>
       <div className="max-w-5xl mx-auto flex justify-between items-center px-4 py-2 h-20">
         <div className="flex items-center gap-12 text-4xl font-normal">
           <img src={undraw_breakfast} alt="logo" className="h-14 w-14" />
