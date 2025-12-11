@@ -4,7 +4,7 @@ export default function InfoSection() {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-5xl mx-auto flex flex-col items-center text-center py-12">
+    <div className="max-w-5xl mx-auto flex flex-col items-center text-center mt-12">
       <h1 className="text-[3em] leading-tight tracking-[-2px]">
         {t("homepage_title_two")}
       </h1>
