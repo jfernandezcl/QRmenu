@@ -1,6 +1,7 @@
 export const colors = {
   background: "#e1fbf2", // verde muy claro
   bgSecundary: "#2cd49a", // verde
+  bgTertiary: "#082a4d", // azul oscuro
 
   buttonPrimary: "#2cd49a", // verde
   buttonSecondary: "#c1e5d9", // verde claro
