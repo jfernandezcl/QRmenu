@@ -8,7 +8,6 @@ export default function Footer() {
   return (
     <footer className="w-full bg-bgTertiary text-textQuaternary mt-24 py-8">
       <div className="max-w-5xl mx-auto mb-6">
-        {/* MISMA ALTURA QUE HEADER */}
         <div className="flex justify-between items-center h-20">
           <h1 className="text-4xl">
             <a href="/home" className="hover:text-buttonPrimary">
@@ -16,8 +15,7 @@ export default function Footer() {
             </a>
           </h1>
 
-          {/* ICONOS AGRUPADOS (como los botones del header) */}
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-3 md:gap-6">
             <img
               src={icon_instagram}
               alt="instagram"

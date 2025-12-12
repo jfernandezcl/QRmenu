@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header>
       <div className="max-w-5xl mx-auto flex justify-between items-center px-4 py-2 h-20">
-        <div className="flex items-center gap-12 text-4xl font-normal">
+        <div className="flex items-center gap-6 md:gap-12 text-2xl md:text-4xl font-normal">
           <img src={undraw_breakfast} alt="logo" className="h-14 w-14" />
           <h1 className="text-textPrimary">
             <a href="/home" className="hover:text-buttonPrimary">
@@ -26,9 +26,9 @@ export default function Header() {
           </h1>
         </div>
 
-        <div className="flex items-center gap-6">
+        <div className="flex flex-wrap justify-end items-center gap-2 md:gap-6">
           <DropdownMenu>
-            <DropdownMenuTrigger className="px-4 py-2 border rounded hover:bg-accent">
+            <DropdownMenuTrigger className="px-2 py-1 sm:px-4 sm:py-2 border rounded hover:bg-accent text-sm sm:text-base">
               {t("buttons.language")}
             </DropdownMenuTrigger>
             <DropdownMenuContent sideOffset={5}>
@@ -40,10 +40,11 @@ export default function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <button className="relative px-8 py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary">
+          <button className="px-3 py-1 sm:px-8 sm:py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary text-sm sm:text-base">
             {t("buttons.login")}
           </button>
-          <button className="relative px-6 py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary">
+
+          <button className="px-2 py-1 sm:px-6 sm:py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary text-sm sm:text-base">
             {t("buttons.register")}
           </button>
         </div>
