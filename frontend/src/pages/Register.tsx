@@ -1,11 +1,15 @@
 import RegisterForm from "../components/RegisterForm";
+import Header from "../components/Header";
 
-function App() {
+function Register() {
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center">
-      <RegisterForm />
+    <div className="bg-background">
+      <Header />
+      <div className="min-h-screen flex flex-col items-center justify-center">
+        <RegisterForm />
+      </div>
     </div>
   );
 }
 
-export default App;
+export default Register;
