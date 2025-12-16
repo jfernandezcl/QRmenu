@@ -30,7 +30,7 @@ export default function RegisterForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="max-w-md mx-auto p-6 bg-white rounded shadow-md flex flex-col gap-4"
+      className="max-w-md mx-auto w-full p-8 py-12 bg-white rounded shadow-md flex flex-col gap-4"
     >
       <h2 className="text-2xl font-semibold text-center">
         {t("register.title")}
@@ -42,7 +42,7 @@ export default function RegisterForm() {
         </label>
         <input
           {...register("restaurantName")}
-          className="px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-buttonSecondary"
           placeholder="Mi Restaurante"
         />
         {errors.restaurantName && (
@@ -57,7 +57,7 @@ export default function RegisterForm() {
         <input
           {...register("email")}
           type="email"
-          className="px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-buttonSecondary"
           placeholder="correo@restaurante.com"
         />
         {errors.email && (
@@ -72,7 +72,7 @@ export default function RegisterForm() {
         <input
           {...register("password")}
           type="password"
-          className="px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-buttonSecondary"
           placeholder="********"
         />
         {errors.password && (
@@ -84,7 +84,7 @@ export default function RegisterForm() {
 
       <button
         type="submit"
-        className="mt-4 bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+        className="mt-4 bg-bgSecundary text-white py-2 rounded hover:bg-hoverPrimary transition"
       >
         {t("buttons.register")}
       </button>
