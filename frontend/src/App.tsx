@@ -1,24 +1,15 @@
-import Header from "./components/Header.tsx";
-import IntroSection from "./components/IntroSection.tsx";
-import InfoSection from "./components/InfoSection.tsx";
-import Footer from "./components/Footer.tsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Register from "./pages/Register";
 
 function App() {
   return (
-    <>
-      <div className="w-full bg-background">
-        <Header />
-        <IntroSection />
-      </div>
-
-      <div>
-        <InfoSection />
-      </div>
-
-      <div>
-        <Footer />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
   );
 }
 

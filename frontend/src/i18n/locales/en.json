@@ -5,9 +5,12 @@
     "homepage_description": "QRMenu allows restaurants to easily manage their menus, while users can view them instantly by scanning a unique QR code.",
     "homepage_title_two": "The easiest way to show your menu",
     "homepage_description_two": "Through a QR code, your customers can easily access your establishment's digital menu, enhancing their experience and making your offerings more accessible.",
+    "register": {
+      "title": "Restaurant registration"
+    },
     "buttons": {
       "login": "Log in",
-      "register": "Register",
+      "register": "Sing up",
       "access": "Access",
       "create_account": "Create account",
       "forgot_password": "Forgot your password?",

@@ -6,9 +6,11 @@ import {
   DropdownMenuItem,
 } from "./ui/dropdown-menu";
 import undraw_breakfast from "../images/undraw_breakfast.svg";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const changeLanguage = (lng: "en" | "es") => {
     i18n.changeLanguage(lng);
@@ -44,7 +46,10 @@ export default function Header() {
             {t("buttons.login")}
           </button>
 
-          <button className="px-2 py-1 sm:px-6 sm:py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary text-sm sm:text-base">
+          <button
+            className="px-2 py-1 sm:px-6 sm:py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary text-sm sm:text-base"
+            onClick={() => navigate("/register")}
+          >
             {t("buttons.register")}
           </button>
         </div>
