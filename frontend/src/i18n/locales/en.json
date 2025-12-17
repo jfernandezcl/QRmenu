@@ -18,7 +18,9 @@
       "create_account": "Create account",
       "forgot_password": "Forgot your password?",
       "start_now": "Start now with QRMenu",
-      "language": "Language"
+      "language": "Language",
+      "profile": "My profile",
+      "addMenu": "add menu"
     },
     "labels": {
       "email": "Email",
