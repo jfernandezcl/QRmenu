@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -6,11 +7,9 @@ import {
   DropdownMenuItem,
 } from "./ui/dropdown-menu";
 import undraw_breakfast from "../images/undraw_breakfast.svg";
-import { useNavigate } from "react-router-dom";
 
-export default function Header() {
+export default function HeaderLetter() {
   const { t, i18n } = useTranslation();
-
   const changeLanguage = (lng: "en" | "es") => {
     i18n.changeLanguage(lng);
   };
@@ -45,16 +44,16 @@ export default function Header() {
           </DropdownMenu>
           <button
             className="px-3 py-1 sm:px-8 sm:py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary text-sm sm:text-base"
-            onClick={() => navigate("/login")}
+            onClick={() => navigate("/addmenu")}
           >
-            {t("buttons.login")}
+            {t("buttons.addMenu")}
           </button>
 
           <button
             className="px-2 py-1 sm:px-6 sm:py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary text-sm sm:text-base"
-            onClick={() => navigate("/register")}
+            onClick={() => navigate("/profile")}
           >
-            {t("buttons.register")}
+            {t("buttons.profile")}
           </button>
         </div>
       </div>
