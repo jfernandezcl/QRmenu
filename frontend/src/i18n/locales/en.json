@@ -8,6 +8,9 @@
     "register": {
       "title": "Restaurant registration"
     },
+    "login": {
+      "title": "User access"
+    },
     "buttons": {
       "login": "Log in",
       "register": "Sing up",

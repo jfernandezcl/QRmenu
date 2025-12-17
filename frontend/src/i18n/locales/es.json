@@ -8,6 +8,9 @@
     "register": {
       "title": "Registro del restaurante"
     },
+    "login": {
+      "title": "Acceso usuarios"
+    },
     "buttons": {
       "login": "Iniciar sesión",
       "register": "Registrarse",
