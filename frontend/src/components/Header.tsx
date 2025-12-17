@@ -22,7 +22,7 @@ export default function Header() {
         <div className="flex items-center gap-6 md:gap-12 text-2xl md:text-4xl font-normal">
           <img src={undraw_breakfast} alt="logo" className="h-14 w-14" />
           <h1 className="text-textPrimary">
-            <a href="/home" className="hover:text-buttonPrimary">
+            <a href="/" className="hover:text-buttonPrimary">
               {t("app_name")}
             </a>
           </h1>
@@ -42,7 +42,10 @@ export default function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <button className="px-3 py-1 sm:px-8 sm:py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary text-sm sm:text-base">
+          <button
+            className="px-3 py-1 sm:px-8 sm:py-2 text-textQuaternary bg-buttonPrimary rounded hover:bg-hoverPrimary text-sm sm:text-base"
+            onClick={() => navigate("/login")}
+          >
             {t("buttons.login")}
           </button>
 
